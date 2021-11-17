@@ -1,3 +1,4 @@
+function typeError(){
 try {
     throw new TypeError('Hello', "someFile.js", 10)
   } catch (e) {
@@ -7,9 +8,11 @@ try {
     console.log(e.fileName)              // "someFile.js"
     console.log(e.lineNumber)            // 10
     console.log(e.columnNumber)          // 0
-    console.log(e.stack)                 // "@Scratchpad/2:2:9\n"
+    console.log(e.stack)                // "@Scratchpad/2:2:9\n"
+    console.log(e.errors)
   }
+}
   
   module.exports={
-    TypeError
+    typeError
 }

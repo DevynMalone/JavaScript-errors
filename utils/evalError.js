@@ -9,6 +9,7 @@ try {
     console.log(e.lineNumber);           // 10
     console.log(e.columnNumber);         // 0
     console.log(e.stack);                // "@Scratchpad/2:2:9\n"
+    console.log(e.errors);
   }
   
 
